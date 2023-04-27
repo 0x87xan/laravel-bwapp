@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SearchRequest;
 use App\Models\Films;
+use Illuminate\Support\Facades\DB;
 
 
 class SearchController extends Controller
@@ -18,7 +19,9 @@ class SearchController extends Controller
     public function search(SearchRequest $request)
     {
 
-        $films = Films::where('name', 'LIKE', '%' . $request['query'] . '%')->get();
+        $input = $request['query'];
+        $query = "SELECT * FROM films WHERE name = '$input'";
+        $films = DB::select($query);
         return view('search', ['data' => $films]);
 
     }
