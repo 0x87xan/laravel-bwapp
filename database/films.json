@@ -1,0 +1,302 @@
+[
+    {
+        "name": "The Shawshank Redemption",
+        "imdb_rate": "9.3",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Godfather",
+        "imdb_rate": "9.2",
+        "release_date": "1972"
+    },
+    {
+        "name": "The Dark Knight",
+        "imdb_rate": "9.0",
+        "release_date": "2008"
+    },
+    {
+        "name": "The Godfather Part 2",
+        "imdb_rate": "9.0",
+        "release_date": "1974"
+    },
+    {
+        "name": "12 Angry Men",
+        "imdb_rate": "9.0",
+        "release_date": "1957"
+    },
+    {
+        "name": "Schindler's list",
+        "imdb_rate": "8.9",
+        "release_date": "1993"
+    },
+    {
+        "name": "The Lord of the Rings: The return of the King",
+        "imdb_rate": "8.9",
+        "release_date": "2003"
+    },
+    {
+        "name": "Pilp Fiction",
+        "imdb_rate": "8.8",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Lord of the Rings: The Fellowship of the Ring",
+        "imdb_rate": "8.8",
+        "release_date": "2001"
+    },
+    {
+        "name": "The Good, the Bad and the Ugly",
+        "imdb_rate": "8.8",
+        "release_date": "1966"
+    },
+    {
+        "name": "Forrest Gump",
+        "imdb_rate": "8.8",
+        "release_date": "1994"
+    },
+    {
+        "name": "Fight Club",
+        "imdb_rate": "8.7",
+        "release_date": "1999"
+    },
+    {
+        "name": "The Lord of the Rings: The Two Towers",
+        "imdb_rate": "8.7",
+        "release_date": "2002"
+    },
+    {
+        "name": "Inception",
+        "imdb_rate": "8.7",
+        "release_date": "2010"
+    },
+    {
+        "name": "Star Wars: Episode V - The Empire Strikes Back",
+        "imdb_rate": "8.7",
+        "release_date": "1980"
+    },
+    {
+        "name": "The Matrix",
+        "imdb_rate": "8.7",
+        "release_date": "1999"
+    },
+    {
+        "name": "Goodfellas",
+        "imdb_rate": "8.7",
+        "release_date": "1990"
+    },
+    {
+        "name": "One Flew Over the Cuckoo's nest",
+        "imdb_rate": "8.6",
+        "release_date": "1975"
+    },
+    {
+        "name": "Se7en",
+        "imdb_rate": "8.6",
+        "release_date": "1995"
+    },
+    {
+        "name": "It's Wonderful Life",
+        "imdb_rate": "8.6",
+        "release_date": "1946"
+    },
+    {
+        "name": "Seven Samurai",
+        "imdb_rate": "8.6",
+        "release_date": "1954"
+    },
+    {
+        "name": "The Silence of the Lambs",
+        "imdb_rate": "8.6",
+        "release_date": "1991"
+    },
+    {
+        "name": "Saving Private Ryan",
+        "imdb_rate": "8.6",
+        "release_date": "1998"
+    },
+    {
+        "name": "City of God",
+        "imdb_rate": "8.6",
+        "release_date": "2002"
+    },
+    {
+        "name": "Interstellar",
+        "imdb_rate": "8.6",
+        "release_date": "2002"
+    },
+    {
+        "name": "Life is Beautiful",
+        "imdb_rate": "8.6",
+        "release_date": "1997"
+    },
+    {
+        "name": "The Green Mile",
+        "imdb_rate": "8.6",
+        "release_date": "1999"
+    },
+    {
+        "name": "Star Wars: Episode IV - A New Hope",
+        "imdb_rate": "8.5",
+        "release_date": "1997"
+    },
+    {
+        "name": "Terminator 2: Judgment Day",
+        "imdb_rate": "8.5",
+        "release_date": "1991"
+    },
+    {
+        "name": "Back to the Future",
+        "imdb_rate": "8.5",
+        "release_date": "1985"
+    },
+    {
+        "name": "Spirited Away",
+        "imdb_rate": "8.5",
+        "release_date": "2001"
+    },
+    {
+        "name": "The Pianist",
+        "imdb_rate": "8.5",
+        "release_date": "2002"
+    },
+    {
+        "name": "Psycho",
+        "imdb_rate": "8.5",
+        "release_date": "1960"
+    },
+    {
+        "name": "Parasite",
+        "imdb_rate": "8.5",
+        "release_date": "2019"
+    },
+    {
+        "name": "Leon: The Professional",
+        "imdb_rate": "8.5",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Lion King",
+        "imdb_rate": "8.5",
+        "release_date": "1994"
+    },
+    {
+        "name": "Gladiator",
+        "imdb_rate": "8.5",
+        "release_date": "2000"
+    },
+    {
+        "name": "American History X",
+        "imdb_rate": "8.5",
+        "release_date": "1998"
+    },
+    {
+        "name": "The Departed",
+        "imdb_rate": "8.5",
+        "release_date": "2006"
+    },
+    {
+        "name": "Whiplash",
+        "imdb_rate": "8.5",
+        "release_date": "2014"
+    },
+    {
+        "name": "The Prestige",
+        "imdb_rate": "8.5",
+        "release_date": "2006"
+    },
+    {
+        "name": "The Usual Suspect",
+        "imdb_rate": "8.5",
+        "release_date": "1995"
+    },
+    {
+        "name": "Casablanca",
+        "imdb_rate": "8.5",
+        "release_date": "1942"
+    },
+    {
+        "name": "Grave of the Fireflies",
+        "imdb_rate": "8.5",
+        "release_date": "1988"
+    },
+    {
+        "name": "Harakiri",
+        "imdb_rate": "8.5",
+        "release_date": "1962"
+    },
+    {
+        "name": "The Intouchables",
+        "imdb_rate": "8.5",
+        "release_date": "2011"
+    },
+    {
+        "name": "Modern Times",
+        "imdb_rate": "8.4",
+        "release_date": "1936"
+    },
+    {
+        "name": "Once Upon a Time in the West",
+        "imdb_rate": "8.4",
+        "release_date": "1968"
+    },
+    {
+        "name": "Cinema Paradiso",
+        "imdb_rate": "8.4",
+        "release_date": "1988"
+    },
+    {
+        "name": "Rear Window",
+        "imdb_rate": "8.4",
+        "release_date": "1954"
+    },
+    {
+        "name": "Alien",
+        "imdb_rate": "8.4",
+        "release_date": "1979"
+    },
+    {
+        "name": "City Lights",
+        "imdb_rate": "8.4",
+        "release_date": "1931"
+    },
+    {
+        "name": "Apocalypse Now",
+        "imdb_rate": "8.4",
+        "release_date": "1979"
+    },
+    {
+        "name": "Memento",
+        "imdb_rate": "8.4",
+        "release_date": "2000"
+    },
+    {
+        "name": "Django Unchained",
+        "imdb_rate": "8.4",
+        "release_date": "2012"
+    },
+    {
+        "name": "Raiders of the Lost Ark",
+        "imdb_rate": "8.4",
+        "release_date": "1981"
+    },
+    {
+        "name": "WALL-E",
+        "imdb_rate": "8.4",
+        "release_date": "2008"
+    },
+    {
+        "name": "The Lives of Others",
+        "imdb_rate": "8.4",
+        "release_date": "2006"
+    },
+    {
+        "name": "Sunset Blvd.",
+        "imdb_rate": "8.4",
+        "release_date": "1950"
+    },
+    {
+        "name": "Paths of Glory",
+        "imdb_rate": "8.4",
+        "release_date": "1950"
+    }
+]
