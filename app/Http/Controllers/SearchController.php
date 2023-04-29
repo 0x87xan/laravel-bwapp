@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SearchRequest;
 use App\Models\Films;
+use App\Models\User;
 
 
 class SearchController extends Controller
@@ -18,7 +19,7 @@ class SearchController extends Controller
     public function search(SearchRequest $request)
     {
 
-        $films = Films::where('name', 'LIKE', '%' . $request['query'] . '%')->get();
+        $films = User::where('username', '=' , $request['query'])->get();
         return view('search', ['data' => $films]);
 
     }
