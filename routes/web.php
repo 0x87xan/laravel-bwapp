@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use \App\Http\Controllers\SearchController;
+use \App\Http\Controllers\ImageDownloadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,11 @@ Route::middleware('restricted.ip')->group(function () {
         Route::controller(SearchController::class)->group(function (){
             Route::get('/search', 'index')->name('search.view');
             Route::post('/search', 'search')->name('search.find');
+        });
+
+        Route::controller(ImageDownloadController::class)->group(function (){
+           Route::get('/gallery', 'index')->name('gallery.view');
+           Route::post('/gallery/download', 'download_image')->name('gallery.download');
         });
     });
 
