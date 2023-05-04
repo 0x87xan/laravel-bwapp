@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use \App\Http\Controllers\SearchController;
 use \App\Http\Controllers\ImageDownloadController;
+use \App\Http\Controllers\UsersSearchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,6 +42,11 @@ use Illuminate\Support\Facades\Route;
         Route::controller(ImageDownloadController::class)->group(function (){
             Route::get('/gallery', 'index')->name('gallery.view');
             Route::post('/gallery/download', 'download_image')->name('gallery.download');
+        });
+
+        Route::controller(UsersSearchController::class)->group(function () {
+           Route::get('/users/search', 'index')->name('users.search.view');
+           Route::post('/users/search', 'search')->name('users.search');
         });
     });
 
