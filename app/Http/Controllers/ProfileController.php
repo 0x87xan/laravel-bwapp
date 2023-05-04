@@ -64,7 +64,7 @@ class ProfileController extends Controller
             'avatar' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         $avatar = $request->file('avatar');
-        $filename = time() . '.' . $avatar->extension();
+        $filename = time() . '.' . $avatar->getClientOriginalExtension();
         $path = $request->avatar->storeAs(('public/images'), $filename);
         Auth::user()->avatar = $filename;
         Auth::user()->save();
