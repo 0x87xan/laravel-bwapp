@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('restricted.ip')->group(function () {
+//Route::middleware('restricted.ip')->group(function () {
     Route::get('/', function () {
         return view('welcome');
     });
@@ -30,6 +30,7 @@ Route::middleware('restricted.ip')->group(function () {
             Route::get('/profile', 'edit')->name('profile.edit');
             Route::patch('/profile', 'update')->name('profile.update');
             Route::delete('/profile', 'destroy')->name('profile.destroy');
+            Route::patch('/profile/avatar/update', 'updateAvatar')->name('profile.avatar.update');
         });
 
         Route::controller(SearchController::class)->group(function (){
@@ -44,6 +45,6 @@ Route::middleware('restricted.ip')->group(function () {
     });
 
     require __DIR__.'/auth.php';
-});
+//});
 
 
