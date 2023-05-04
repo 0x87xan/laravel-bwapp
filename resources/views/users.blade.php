@@ -24,6 +24,9 @@
                             </button>
                         </div>
                     </form>
+                    @if(session()->has('failure'))
+                        <p class="text-red-500 text-xl">{{ session()->get('failure') }}</p>
+                    @endif
                     @error('email')
                         @foreach($errors->all() as $error)
                         <p class="text-md text-red-500 mt-3">{{ $error }}</p>

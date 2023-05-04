@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UsersSearchRequest;
+use Illuminate\Http\Request;
 
 class UsersSearchController extends Controller
 {
@@ -11,10 +11,13 @@ class UsersSearchController extends Controller
         return view('users');
     }
 
-    public function search(UsersSearchRequest $request)
+    public function search(Request $request)
     {
         $xml = simplexml_load_file(database_path('users.xml'));
         $user = $xml->xpath("//user[email='{$request->email}']");
-        return view('users', ['data' => $user]);
+        if ($user){
+            return view('users', ['data' => $user]);
+        }
+        return redirect()->back()->with('failure', "User with this email doesn't exist");
     }
 }
