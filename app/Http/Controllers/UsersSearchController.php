@@ -15,6 +15,9 @@ class UsersSearchController extends Controller
     {
         $xml = simplexml_load_file(database_path('users.xml'));
         $user = $xml->xpath("//user[email='{$request->email}']");
-        return view('users', ['data' => $user]);
+        if ($user) {
+            return view('users', ['data' => $user]);
+        }
+        return redirect()->back()->with('failure', "User with this email doesn't exist");
     }
 }
