@@ -25,17 +25,14 @@
                         </div>
                     </form>
                 </div>
-                <div class="border border-black p-6">
+                <div class="border border-black p-6 grid grid-cols-3 gap-4">
                     @if(isset($data))
-                        @foreach($data as $film)
+                        @foreach($data as $user)
                             <div
-                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-{{--                                <img class="rounded-t-lg object-fill" src="{{ asset('storage/images/' . $film->image) }}" alt=""/>--}}
+                                class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                 <div class="p-5">
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                        {{ $film->username }}{!! $film->name !!}</h5>
-{{--                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ $film->imdb_rate }}</p>--}}
-
+                                        {{ $user->username }} | {!! $user->name !!}</h5>
                                 </div>
                             </div>
                         @endforeach

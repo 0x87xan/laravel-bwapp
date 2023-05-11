@@ -19,7 +19,8 @@ class SearchController extends Controller
     public function search(SearchRequest $request)
     {
 
-        $films = User::where('username', '=' , $request['query'])->get();
+        $username = $request['query'];
+        $films = User::where('username', 'LIKE' , "%{$username}%")->get();
         return view('search', ['data' => $films]);
 
     }
