@@ -12,9 +12,9 @@ class ImageDownloadController extends Controller
         return view('image-download');
     }
 
-    public function download_image(Request $request)
+    public function downloadImage(Request $request)
     {
-        $filename=basename($request->input('file_name'));
+        $filename = basename($request->input('file_name'));
         if (Storage::exists('public/images/' . $filename)){
             return response()->download(storage_path('app\\public\\images\\') . $filename);
         }
