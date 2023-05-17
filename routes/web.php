@@ -39,7 +39,7 @@ Route::middleware('restricted.ip')->group(function () {
 
         Route::controller(ImageDownloadController::class)->group(function (){
            Route::get('/gallery', 'index')->name('gallery.view');
-           Route::post('/gallery/download', 'download_image')->name('gallery.download');
+           Route::post('/gallery/download', 'downloadImage')->name('gallery.download');
         });
     });
 

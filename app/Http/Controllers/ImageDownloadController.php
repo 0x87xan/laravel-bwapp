@@ -12,7 +12,7 @@ class ImageDownloadController extends Controller
         return view('image-download');
     }
 
-    public function download_image(Request $request)
+    public function downloadImage(Request $request)
     {
         $file_path = storage_path("app\\public\\images\\").$request->input('file_name');
         return response()->download($file_path);
