@@ -7,7 +7,10 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
+use Intervention\Image\Facades\Image;
+
 
 class ProfileController extends Controller
 {
@@ -63,12 +66,29 @@ class ProfileController extends Controller
         $request->validate([
             'avatar' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $avatar = $request->file('avatar');
-        $filename = time() . '.' . $avatar->extension();
-        $path = $request->avatar->storeAs(('public/images'), $filename);
-        Auth::user()->avatar = $filename;
-        Auth::user()->save();
 
-        return redirect()->back()->with('status', 'profile-avatar-updated');
+        $avatar = $request->file('avatar');
+        $current_avatar = Auth::user()->avatar;
+
+        try {
+            $image = Image::make($avatar);
+        }catch (\Exception $e){
+            return redirect()->back()->with('avatar', 'Avatar should be an image');
+        }
+
+        if ($image->height() > 1 && $image->width() > 1){
+            if (Storage::exists('public/images/' . $current_avatar) && $current_avatar != 'default-logo.png'){
+                Storage::delete('public/images/' . $current_avatar);
+            }
+
+            $filename = time() . '.' . $avatar->extension();
+            $path = $request->avatar->storeAs(('public/images'), $filename);
+            Auth::user()->avatar = $filename;
+            Auth::user()->save();
+
+            return redirect()->back()->with('status', 'profile-avatar-updated');
+        }
+
+        return redirect()->back()->with('avatar', 'Something went wrong');
     }
 }

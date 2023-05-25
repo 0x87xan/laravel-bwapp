@@ -23,6 +23,9 @@
         <div>
             <x-text-input id="avatar" name="avatar" type="file" class="mt-1 block w-full"/>
             <x-input-error class="mt-2" :messages="$errors->get('avatar')"/>
+            @if (session('avatar'))
+               <p class="text-red-500 mt-3">{{ session('avatar') }}</p>
+            @endif
         </div>
 
         <div class="flex items-center gap-4">
