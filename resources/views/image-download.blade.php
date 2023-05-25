@@ -25,8 +25,11 @@
                         </div>
                     </form>
                     @if(session()->has('error'))
-                        <p class="text-red-500 text-xl">{{ session()->get('error') }}</p>
+                        <p class="text-red-500 mt-3">{{ session()->get('error') }}</p>
                     @endif
+                    @error('file_name')
+                        <p class="text-red-400">{{ $message }}</p>
+                    @enderror
                 </div>
             </div>
         </div>

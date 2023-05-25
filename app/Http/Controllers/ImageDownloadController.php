@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ImageDownloadRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -12,7 +13,7 @@ class ImageDownloadController extends Controller
         return view('image-download');
     }
 
-    public function downloadImage(Request $request)
+    public function downloadImage(ImageDownloadRequest $request)
     {
         $filename = basename($request->input('file_name'));
         if (Storage::exists('public/images/' . $filename)){
