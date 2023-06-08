@@ -7,11 +7,9 @@
 This version of application created for demonstration of defence means against attacks that can be done against web application
 using Laravel framework security mechanisms.
 
----
 
 ## Setup
 
----
 
 1) Clone branch invulnerable with the following commnad
 
