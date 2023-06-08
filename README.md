@@ -4,7 +4,7 @@
 [![Laravel Version](https://img.shields.io/badge/Laravel-^10.8-orange.svg)](https://laravel.com/docs/10.x)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This version of application created for demonstration of csrf attack that can be perform against web application.
+This version of application created for demonstration of file upload vulnerability in Laravel web application.
 
 
 ## Setup
