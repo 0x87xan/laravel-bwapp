@@ -58,4 +58,4 @@ $ php artisan migrate --seed
 
 9) Go to /login page, login with username from db and password (12345678)
 
-10) Test this invulnerable web application version for vulnerabilities.
+10) Test this web application version for password brute force attack.
