@@ -8,16 +8,9 @@
 This project was created solely for educational purposes. It demonstrates the mistakes that developers can make during 
 the development process. It also allows you to use these  mistakes to test how they can affect your application and the 
 consequences they can lead to.
----
 
-## Contents
 
-- [Usage](#usage)
-- [License](#license)
-
-### Usage <a name="usage"></a>
-
----
+## Usage <a name="usage"></a>
 
 For every attack there is particular branch in where described whole setup process
 
@@ -30,7 +23,6 @@ For every attack there is particular branch in where described whole setup proce
 - [XPath](https://github.com/0x87xan/laravel-bwapp/tree/xpath)
 - [XSS](https://github.com/0x87xan/laravel-bwapp/tree/xss)
 
-### License <a name="license"></a>
+## License <a name="license"></a>
 
----
 Laravel-bwapp is freely available for everyone for free use. Please, see the [license](LICENSE) file.
