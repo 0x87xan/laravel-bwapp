@@ -11,7 +11,7 @@ using Laravel framework security mechanisms.
 ## Setup
 
 
-1) Clone branch invulnerable with the following commnad
+1) Clone branch invulnerable with the following command
 
 ```console
 $ git clone -b invulnerable https://github.com/0x87xan/laravel-bwapp.git
